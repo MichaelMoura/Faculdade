@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="form"><!--Aqui em questão seria o form normalmente-->
+            <input type="text" id="x1" placeholder="Insira um número"><br>
+            <input type="text" id="x2" placeholder="Insira outro número"><br>
+            <div class="line-button">
+                <button>Calcular</button>
+            </div>
+            <textarea id="texto" placeholder="Resultado"></textarea>
+        </div>
+
+
+    <script>
+        let num1;
+        let num2;
+        let texto = document.querySelector('textarea')
+
+
+        document.querySelector('button').addEventListener('click', function(){
+            num1 = Number(document.querySelector('#x1').value);
+            num2 = Number(document.querySelector('#x2').value);
+            if(num1>num2){
+                texto.textContent = `${num1} é maior que ${num2}`
+            }else if(num2>num1){
+                texto.textContent = `${num2} é maior que ${num1}`
+            }else{
+                texto.textContent = `Os valores são iguais`
+            }
+        })
+    </script>
+</body>
+</html>
