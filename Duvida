@@ -8,7 +8,7 @@
 </head>
 <body>
     
-        <form><!--Aqui em questão seria o form normalmente-->
+        <form><!--Aqui em questão seria o problema-->
             <input type="text" id="x1" placeholder="Insira um número"><br>
             <input type="text" id="x2" placeholder="Insira outro número"><br>
             <div class="line-button">
